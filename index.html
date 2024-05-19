@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDE FILMES</title>
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 60px; /* Espaço para o rodapé */
+        }
+
+        .banner-netflix {
+            background-image: url('https://older.com/1920x300');
+            background-size: cover;
+            background-position: center;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-netflix h1 {
+            font-size: 4rem;
+            color: #000000;
+            text-shadow: 2px 4px 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .barra-categorias {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .barra-categorias a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .barra-categorias a:hover {
+            color: #ffffff;
+        }
+
+        .conteudo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .capa-video-container, .detalhes-filme {
+            flex: 1 1 45%;
+            max-width: 45%;
+            margin: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .video-container video {
+            width: 100%;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .detalhes-filme {
+            color: #ffffff;
+            font-size: 1.2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .detalhes-filme h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .detalhes-filme p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 1200px) {
+            .banner-netflix h1 {
+                font-size: 3rem;
+            }
+            
+            .barra-categorias a {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .conteudo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .capa-video-container, .detalhes-filme {
+                max-width: 100%;
+                flex: 1 1 100%;
+            }
+
+            .banner-netflix h1 {
+                font-size: 2rem;
+            }
+
+            .barra-categorias a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1rem;
+            }
+
+            .slider {
+                height: 300px;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .banner-netflix h1 {
+                font-size: 5rem;
+            }
+
+            .barra-categorias a {
+                font-size: 1.5rem;
+            }
+        
+        }
+        h5 {
+                text-align: center;
+                color: #2600ff;
+            }
+           
+    </style>
+</head>
+<body>
+
+<div class="banner-netflix">
+    <h1>REDE FILMES</h1>
+</div>
+
+<div class="barra-categorias">
+    <a href="#">Filmes de Ação</a>
+    <a href="#">Comédia</a>
+    <a href="#">Romance</a>
+</div>
+
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="A Paixão de Cristo.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/A Paixão de Cristo.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>A Paixão de Cristo  </h2>
+        <p><strong>Ano de lançamento:</strong> 2004</p>
+        <p><strong>Gênero:</strong> #Drama #Thriller #Religioso</p>
+        <p><strong>Sinopse:</strong> Nesta versão da crucificação de Cristo baseada no Novo Testamento, Judas agiliza a queda de Jesus entregando-o a oficiais do Império Romano escolhidos a dedo. Para horror de sua mãe Maria, de Madalena e de seus discípulos, Jesus é condenado à morte.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="O.Exorcista.do.Papa.2023.720p.DUB @Play_MP4.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/O Exorcista do Papa.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>O Exorcista do Papa</h2>
+        <p><strong>Ano de lançamento:</strong> 2023</p>
+        <p><strong>Gênero:</strong> #Terror #Mistério #Thriller</p>
+        <p><strong>Sinopse:</strong> O padre Gabriele Amorth, exorcista do Vaticano, luta contra Satanás e demônios possuidores de inocentes. Um retrato detalhado de um padre que realizou mais de 100 mil exorcismos em sua vida.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="Rebel Moon – Parte 2 A Marcadora de Cicatrizes.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/Rebel Moon – Parte 2 A Marcadora de Cicatrizes.jpeg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>Rebel Moon – Parte 2: A Marcadora de Cicatrizes</h2>
+        <p><strong>Ano de lançamento:</strong> 2024</p>
+        <p><strong>Gênero:</strong>#Ação #Aventura #Ficção</p>
+        <p><strong>Sinopse:</strong> Quando uma colônia pacífica às margens de uma galáxia se vê ameaçada pelos exércitos de uma força dominante tirânica, Kora (Sofia Boutella), uma estranha misteriosa que vive entre os habitantes da vila, se torna a melhor esperança deles para sobreviver.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="Rebel.Moon.Parte.1.A.Menina.do.Fogo.1080p.DUB @Play_MP4.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/Rebel Moon - Parte 1 A Menina do Fogo.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>Rebel Moon - Parte 1: A Menina do Fogo</h2>
+        <p><strong>Ano de lançamento:</strong> 2023</p>
+        <p><strong>Gênero:</strong>  #Aventura #FicçãoCientifica</p>
+        
+        <p><strong>Sinopse:</strong> Quando uma colônia pacífica na periferia da galáxia se vê ameaçada pelos exércitos do tirânico regente Balisarius, eles despacham Kora, uma jovem com um passado misterioso, para procurar guerreiros de planetas vizinhos para ajudá-los a se posicionar.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="Rebel Moon – Parte 2 A Marcadora de Cicatrizes.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/Duna Parte 2.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>Duna: Parte 2</h2>
+        <p><strong>Ano de lançamento:</strong> 2024</p>
+        <p><strong>Gênero:</strong> #FicçãoCientífica</p>
+        <p><strong>Sinopse:</strong>  Paul Atreides se une a Chani e aos Fremen enquanto busca vingança contra os conspiradores que destruíram sua família.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="Duna filme.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/DUNA.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>Duna</h2>
+        <p><strong>Ano de lançamento:</strong> 2021</p>
+        <p><strong>Gênero:</strong> #FicçãoCientífica</p>
+        <p><strong>Sinopse:</strong> Paul Atreides é um jovem brilhante, dono de um destino além de sua compreensão. Ele deve viajar para o planeta mais perigoso do universo para garantir o futuro de seu povo.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="Descanse em Paz.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/descanse em paz.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>Descanse em Paz</h2>
+        <p><strong>Ano de lançamento:</strong> 2024</p>
+        <p><strong>Gênero:</strong> #Drama #Suspense</p>
+        <p><strong>Sinopse:</strong> Sergio está afogado em dívidas e problemas de saúde, mas encontrou uma forma de salvar a família dessa ruína toda. Só que o preço a pagar talvez seja alto demais.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="Imaginário Brinquedo Diabólico (2024).mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/Imaginário Brinquedo Diabólico.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>Imaginário Brinquedo Diabólico</h2>
+        <p><strong>Ano de lançamento:</strong> 2024</p>
+        <p><strong>Gênero:</strong> #Mistério #Suspense, #Terror</p>
+        <p><strong>Sinopse:</strong>  Uma mulher retorna com a família para a casa em que cresceu. Sua filha mais jovem logo fica apegada a um ursinho de pelúcia que ela encontra no porão. Apesar da interação parecer divertida, a situação não demora para se tornar sinistra.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="O Salário do Medo.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/O Salário do Medo.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>O Salário do Medo</h2>
+        <p><strong>Ano de lançamento:</strong> 2024</p>
+        <p><strong>Gênero:</strong> #Suspense #Ação</p>
+        <p><strong>Sinopse:</strong> Quando uma explosão em um poço de petróleo ameaça centenas de vidas, uma equipe de salvamento é chamada para cruzar o deserto com um carregamento de nitroglicerina.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="O Segredo Ouse Sonhar.m4v" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/O Segredo Ouse Sonhar .jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>O Segredo: Ouse Sonhar </h2>
+        <p><strong>Ano de lançamento:</strong> 2020</p>
+        <p><strong>Gênero:</strong>  #Romance #Thriller</p>
+        <p><strong>Sinopse:</strong> Em O Segredo: Ouse Sonhar, uma viúva com três filhos contrata um trabalhador manual para consertar sua casa durante uma grande tempestade.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="O Fabricante de Lágrimas.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/The Tearsmith O Fabricante de Lágrimas.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>The Tearsmith: O Fabricante de Lágrimas</h2>
+        <p><strong>Ano de lançamento:</strong> 2024</p>
+        <p><strong>Gênero:</strong> #Romance #Drama</p>
+        <p><strong>Sinopse:</strong> Criados em um orfanato e adotados pela mesma família, Nica e Rigel percebem que têm sentimentos inesperados e irresistíveis um pelo outro.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="Uma Paixão Roubada.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/Uma Paixão Roubada.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>Uma Paixão Roubada</h2>
+        <p><strong>Ano de lançamento:</strong> 2018</p>
+        <p><strong>Gênero:</strong> #Comédia #Drama #Romance </p>
+        <p><strong>Sinopse:</strong> Harry é um charmoso ladrão que, ao tentar assaltar uma casa, conhece Daisy, uma jovem decidida a tirar a própria vida. Após salvar a vida da mulher, ambos começarão uma jornada de amor e autoconhecimento que levará Harry a questionar se também é capaz de salvar a si próprio.
+    </div>
+</div>
+<div class="conteudo">
+    <div class="capa-video-container">
+        <div class="video-container">
+            <video controls>
+                <source src="godzilla.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <img src="capas.html/Godzilla e Kong O Novo Império.jpg" alt="Capa do Filme Godzilla e Kong: O Novo Império" id="capa-video">
+        </div>
+    </div>
+    <div class="detalhes-filme">
+        <h2>Godzilla e Kong: O Novo Império</h2>
+        <p><strong>Ano de lançamento:</strong> 2024</p>
+        <p><strong>Gênero:</strong>  #Ação #FicçãoCientífica</p>
+        <p><strong>Sinopse:</strong> Godzilla e o todo-poderoso Kong enfrentam uma ameaça colossal escondida nas profundezas do planeta, desafiando a sua própria existência e a sobrevivência da raça humana.
+        </div>
+</div>
+
+<footer>
+    &copy; 2024 Todos os direitos reservados.
+</footer>
+
+<script>
+    document.querySelectorAll('.video-container img').forEach(function(img) {
+        img.addEventListener('click', function() {
+            var video = this.previousElementSibling;
+            video.play();
+            this.style.display = 'none';
+        });
+    });
+
+    document.querySelectorAll('video').forEach(function(video) {
+        video.addEventListener('play', function() {
+            var cover = this.nextElementSibling;
+            if (cover) {
+                cover.style.display = 'none';
+            }
+        });
+    });
+
+    function generateMovieSections(count) {
+        let sections = '';
+        for (let i = 0; i < count; i++) {
+            sections += `
+            <div class="capa-video-container">
+                <div class="video-container">
+                    <video controls>
+                        <source src="movie${i + 1}.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <img src="capa_movie${i + 1}.jpg" alt="Capa do Filme Movie ${i + 1}" class="capa-video">
+                </div>
+            </div>
+            <div class="detalhes-filme">
+                <h2>Movie ${i + 1}</h2>
+                <p><strong>Ano de lançamento:</strong> 2024</p>
+                <p><strong>Gênero:</strong> #Ação #FicçãoCientífica</p>
+                <p><strong>Sinopse:</strong> Esta é a sinopse do filme Movie ${i + 1}.</p>
+            </div>`;
+        }
+        return sections;
+    }
+</script>
+<h5>A história de REDE FILMES é uma prova do poder do cinema de unir as pessoas e de transformar sonhos em realidade. É um tributo à paixão, à dedicação e ao amor pela sétima arte. E, enquanto houver histórias para contar e filmes para descobrir, REDE FILMES continuará a ser um farol para os amantes do cinema em todo o mundo.
+
+</h5>
+
+</body>
+</html>
